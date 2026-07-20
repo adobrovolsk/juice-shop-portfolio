@@ -1,0 +1,103 @@
+{
+  "info": {
+    "_postman_id": "5baa4a29-980c-4eb1-9694-3d51beddb158",
+    "name": "OWASP Juice Shop API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55607703"
+  },
+  "item": [
+    {
+      "name": "Получение списка товаров",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/rest/products/search?q=",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "rest",
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Поиск товара по названию",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/rest/products/search?q=apple",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "rest",
+            "products",
+            "search"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "apple"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Авторизация с неверными данными",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test1@mail.com\",\r\n  \"password\": \"12345!\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/rest/user/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "rest",
+            "user",
+            "login"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
