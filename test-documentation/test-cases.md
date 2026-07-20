@@ -42,7 +42,7 @@
 **Test Data:**
 
 - Email: `test@mail.com`
-- Password: `12345`
+- Password: `1234567`
 
 **Steps:**
 
