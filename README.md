@@ -17,7 +17,6 @@ OWASP Juice Shop — учебное web-приложение, имитирующ
 - баг-репорты;
 - результаты тестирования API;
 - Postman-коллекция;
-- примеры SQL-запросов;
 - итоговый отчёт о тестировании.
 
 ## Инструменты
@@ -25,9 +24,7 @@ OWASP Juice Shop — учебное web-приложение, имитирующ
 - Chrome;
 - Chrome DevTools;
 - Postman;
-- Swagger/OpenAPI;
-- Git и GitHub;
-- SQL.
+- Git и GitHub.
 
 ## Автор
 
